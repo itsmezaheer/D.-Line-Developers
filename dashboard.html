@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroCare+ Predictive Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <div>
+                <h1>AeroCare+ Predictive Dashboard</h1>
+                <p>Personalized Attack Risk Forecast</p>
+            </div>
+            <button id="logout-btn" onclick="logout()">Logout</button>
+        </header>
+
+      
+        <section class="risk-flow">
+            <h2>Attack Risk Progress</h2>
+            <div class="flex">
+                <div class="flow-step">Low Risk</div>
+                <div class="flow-step">Mild Risk</div>
+                <div class="flow-step">Moderate Risk</div>
+                <div class="flow-step">Severe Risk</div>
+            </div>
+        </section>
+
+       
+        <section class="cards">
+            <div class="card">
+                <h3>Current AQI Risk</h3>
+                <p class="data" id="aqi-value">--</p>
+                <p class="desc">Realtime Air Quality Index</p>
+            </div>
+
+            <div class="card">
+                <h3>Personal SABA Baseline</h3>
+                <p class="data" id="saba-baseline-display">--</p>
+                <p class="desc">Avg. Dosage/Day (From Calibration)</p>
+            </div>
+
+            <div class="card">
+                <h3>Current SABA Spike</h3>
+                <p class="data" id="current-saba-spike">--</p>
+                <p class="desc">Mock 24-Hour Usage (Simulated Data)</p>
+            </div>
+        </section>
+
+        
+        <section class="status-section card">
+            <h3>Current Condition Status</h3>
+            <p id="user-condition">--</p>
+        </section>
+
+        <footer class="footer">
+            © 2025 AeroCare+. All rights reserved.
+        </footer>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
