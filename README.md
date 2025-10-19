@@ -16,7 +16,7 @@ Our expertise spans **frontend, backend, AI/ML**, and **predictive analytics sys
 
 | Member | Role | GitHub Profile |
 |--------|------|----------------|
-| [**Zaheer**](https://github.com/itsmezaheer) | 🧠 **Team Leader** | Handles core architecture, backend systems . |
+| [**Mohammmad Zaheeruddin**](https://github.com/itsmezaheer) | 🧠 **Team Leader** | Handles core architecture, backend systems . |
 | [**Durga Prasad Koppula**](https://github.com/KoppulaDurgaPrasad) | 💻 **Member-1 (Backbone of the Group)** | Manages frontend, backend, and integration between UI & server logic. |
 | [**Shaik Abdul Razak**](https://github.com/shaikabdulrazak0207) | ⚙️ **Member-2 (Research & Logic)** | Focused on APIs, logic modules, and optimization systems. |
 | [**Rajesh Kumar Panda**](https://github.com/rajeshpanda8247) | 🧩 **Member-3 (Testing & Problem Solving)** | Handles software testing, debugging, and deployment processes. |
