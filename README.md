@@ -31,7 +31,7 @@ Our expertise spans **frontend, backend, AI/ML**, and **predictive analytics sys
 | **Backend** | Node.js, Flask, Express |
 | **Database** | MySQL |
 | **AI/ML (Upcoming)** | Python (Scikit-learn, TensorFlow) |
-| **Tools** | GitHub, VS Code, Postman |
+| **Tools** | GitHub, VS Code |
 | **Version Control** | Git & GitHub |
 
 ---
