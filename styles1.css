@@ -1,0 +1,19 @@
+.input-field {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 0.5rem;
+  color: #f1f5f9;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #818cf8;
+  box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.3);
+}
+
+.hidden {
+  display: none;
+}

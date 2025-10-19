@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aerocare+</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-gray-900 text-gray-100 transition-colors duration-500">
+
+  <header class="flex justify-between items-center p-6 bg-gray-800 shadow-md">
+    <div class="flex items-center space-x-3">
+      <img src="inhaler.jpg" alt="Aerocare+ Logo" class="h-10 w-10 rounded-2xl object-cover" />
+      <h1 class="text-2xl font-bold text-blue-400">Aerocare+</h1>
+    </div>
+
+    <div class="flex items-center space-x-4">
+      <button id="loginBtn" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Login</button>
+      <button id="signupBtn" class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">Sign Up</button>
+    </div>
+  </header>
+
+  <section id="home" class="h-screen flex flex-col justify-center items-center text-center fade-in px-6">
+    <h2 class="text-4xl sm:text-5xl font-bold mb-6 text-blue-400">Smart Breathing with Aerocare+</h2>
+    <p class="max-w-2xl text-gray-300 mb-8 text-lg">
+      Aerocare+ helps asthmatic patients monitor their inhaler usage using Bluetooth technology. 
+      Our AI securely stores and analyzes your data to provide detailed health insights for the future.
+    </p>
+    <a href="#form-section" class="px-6 py-3 bg-blue-600 text-white rounded-full text-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">Get Started</a>
+  </section>
+
+  <section id="form-section" class="min-h-screen flex justify-center items-center bg-gray-950">
+    <div class="bg-gray-800 p-8 rounded-2xl shadow-xl w-full max-w-md fade-in">
+      <h3 id="formTitle" class="text-2xl font-semibold mb-6 text-center text-blue-400">Login to Aerocare+</h3>
+      <form id="userForm" class="space-y-4">
+        <input type="text" id="username" placeholder="Full Name" class="w-full p-3 border border-gray-700 bg-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-100" required>
+        <input type="email" id="email" placeholder="Email" class="w-full p-3 border border-gray-700 bg-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-100" required>
+        <input type="password" id="password" placeholder="Password" class="w-full p-3 border border-gray-700 bg-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-100" required>
+
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300">Submit</button>
+      </form>
+      <p id="switchText" class="mt-4 text-center text-sm text-gray-400">
+        Don’t have an account? <span id="switchLink" class="text-blue-400 cursor-pointer hover:underline">Sign up</span>
+      </p>
+    </div>
+  </section>
+
+  <section id="storage-section" class="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-gray-100 py-10 border-t border-gray-700">
+    <h2 class="text-2xl font-semibold text-blue-400 mb-6">Local Storage Viewer (Admin Tool)</h2>
+    <div class="bg-gray-800 p-6 rounded-xl shadow-xl w-full max-w-3xl">
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr class="border-b border-gray-700 text-blue-300">
+            <th class="py-2 px-3">Email</th>
+            <th class="py-2 px-3">Username</th>
+            <th class="py-2 px-3">Password</th>
+          </tr>
+        </thead>
+        <tbody id="storageData" class="text-gray-200"></tbody>
+      </table>
+    </div>
+    <button id="clearBtn" class="mt-6 px-5 py-2 bg-red-600 rounded-lg hover:bg-red-700 transition">Clear All Local Storage</button>
+    <p id="statusMsg" class="mt-4 text-sm text-gray-400"></p>
+  </section>
+
+  <footer class="bg-gray-800 text-gray-400 py-8 border-t border-gray-700">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-semibold text-blue-400 mb-3">Aerocare+</h3>
+        <p class="text-sm">
+          Empowering asthmatic patients thro
+          
+          
+          
+          
+          ugh smart inhaler technology and AI-powered insights.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold text-gray-200 mb-3">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#home" class="hover:text-blue-400 transition">Home</a></li>
+          <li><a href="#form-section" class="hover:text-blue-400 transition">Get Started</a></li>
+          <li><a href="#storage-section" class="hover:text-blue-400 transition">Storage Viewer</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold text-gray-200 mb-3">Contact Us</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Email: <a href="mailto:support@aerocareplus.com" class="text-blue-400 hover:underline">support@aerocareplus.com</a></li>
+          <li>Phone: <span class="text-gray-300">+1 (555) 987-6543</span></li>
+          <li>Location: <span class="text-gray-300">San Francisco, CA</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center text-xs text-gray-500 mt-8 border-t border-gray-700 pt-4">
+      © 2025 Aerocare+. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
